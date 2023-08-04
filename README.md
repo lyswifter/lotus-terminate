@@ -1,5 +1,5 @@
-# lotus-terminate
-This is the command-line tool for calculating how many pledge FILs will remain if we terminate all sectors early.
+# Filecoin's sector terminating simulator
+This is the command-line tool for estimating how many pledge FILs will remain if we terminate all sectors early.
 
 ## Summary
 This repository contains necessary code to calculating the pledge penalty when you try to terminate sectors on the lastest tipset height. It will reconstruct current state of power actor and reward actor base on the specified chain height. Then it just call for  miner actor's ```PledgePenaltyForTermination``` function to estimate necessary penalty fee like the actual onchain action does.
